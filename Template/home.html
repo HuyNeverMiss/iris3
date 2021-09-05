@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IrisType</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="login-form-container">
+        <form action="classify" method="GET">
+            <div class="card" style="width: 400px">
+            <div class="card-content">
+                <div class="media">
+                <div class="is-size-4">Welcome to IRIS predictions
+                 Please enter your flower measurements below:</div>
+                </div>
+                <div class="content">
+
+                <div class="field">
+                    <p class="control">
+                    Sepal Length: <input class="input" type="number" name="slen" id="slen">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Sepal Width: <input class="input" type="number" name="swid" id="swid">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Petal Length: <input class="input" type="number" name="plen" id="plen">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                    Petal Width: <input class="input" type="number" name="pwid" id="pwid">
+                    </p>
+                </div>
+
+                <div class="field">
+                    <button class="button is-fullwidth is-rounded is-success">Submit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </form>
+        <div class="is-size-4">{{ variety }}</div>
+    </div>
+</body>
+</html>
